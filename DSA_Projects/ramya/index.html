@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dictionary Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+
+        .container {
+            width: 420px;
+            background: #ffffffea;
+            padding: 35px 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            background: #2575fc;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            display: none;
+        }
+
+        .found {
+            color: #0a7d23;
+            background-color: #d6fcd8;
+            display: block;
+        }
+
+        .not-found {
+            color: #b30000;
+            background-color: #ffd7d7;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Dictionary Search </h2>
+
+        <input id="wordInput" type="text" placeholder="Enter a word...">
+        <button onclick="searchWord()">Search</button>
+
+        <div class="result" id="resultArea"></div>
+    </div>
+
+    <!-- IMPORTANT: script must be last -->
+    <script src="script.js"></script>
+</body>
+</html>
